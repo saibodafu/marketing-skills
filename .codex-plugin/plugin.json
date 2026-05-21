@@ -1,0 +1,12 @@
+{
+  "name": "marketing-skills",
+  "version": "0.1.0",
+  "description": "A marketplace-ready collection of marketing skills for campaign briefs, content planning, and go-to-market workflows.",
+  "author": {
+    "name": "saibodafu"
+  },
+  "interface": {
+    "displayName": "Marketing Skills",
+    "description": "Reusable marketing workflow skills for Codex."
+  }
+}

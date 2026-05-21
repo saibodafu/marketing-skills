@@ -1,0 +1,30 @@
+{
+  "name": "marketing-skills-market",
+  "id": "marketing-skills-market",
+  "owner": {
+    "name": "saibodafu"
+  },
+  "metadata": {
+    "description": "A skills marketplace for practical marketing workflows.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "marketing-skills",
+      "source": "./",
+      "description": "Marketing skills for campaign briefs, content planning, and go-to-market workflows.",
+      "version": "0.1.0",
+      "author": {
+        "name": "saibodafu"
+      },
+      "keywords": [
+        "marketing",
+        "campaign",
+        "brief",
+        "content",
+        "go-to-market"
+      ],
+      "category": "marketing"
+    }
+  ]
+}
