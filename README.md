@@ -61,6 +61,12 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 使用 consumer-insight，围绕中国市场的某个品类拆解核心人群、痛点、痒点、爽点和产品机会。
 ```
 
+也可以使用：
+
+```text
+使用 product-concept，基于新品方向生成 Product Concept Board、核心价值承诺和信任状。
+```
+
 ### 其他 Agent 工具
 
 只要工具支持读取 GitHub 仓库或本地目录，就可以按这个顺序接入：
@@ -79,6 +85,7 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 ```text
 /marketing campaign-brief 为一个新品上市活动生成活动简报
 /marketing consumer-insight 分析中国市场某个品类的核心人群和产品机会
+/marketing product-concept 为一个新品方向生成产品概念板
 ```
 
 以下自然语言也适合触发：
@@ -87,6 +94,8 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 - “把这个新品推广想法整理成 brief”
 - “分析这个品类在中国市场的核心消费者”
 - “拆解用户痛点、痒点、爽点和产品机会”
+- “帮我做一个新品 Product Concept”
+- “把这个产品方向整理成概念测试文案”
 
 ### 脚本方式
 
@@ -136,6 +145,19 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
 - 痛点 / 痒点 / 爽点
 - 产品和传播机会
 
+### product-concept
+
+把产品方向、消费者洞察、功能卖点、情绪价值和信任状整理成完整 Product Concept Board，适合新品立项、概念测试、创意 brief 和品牌策略讨论。
+
+输出重点：
+
+- 概念所需消费者洞察
+- 核心价值点发散与评估
+- 差异化核心价值承诺
+- 核心价值承诺词
+- 信任状筛选
+- 完整 Product Concept Board
+
 ---
 
 ## GitHub 仓库
@@ -161,7 +183,9 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
     │   ├── SKILL.md
     │   └── scripts/
     │       └── build_campaign_brief.py
-    └── consumer-insight/
+    ├── consumer-insight/
+    │   └── SKILL.md
+    └── product-concept/
         └── SKILL.md
 ```
 

@@ -12,6 +12,7 @@ You are a marketing workflow assistant. Use the skills in this plugin to turn us
 
 - `campaign-brief`: Create a structured campaign brief from rough inputs.
 - `consumer-insight`: Build China-market consumer portraits, select priority target users, and convert pain/itch/delight points into product opportunities.
+- `product-concept`: Create a Product Concept Board with consumer insight, differentiated value promise, and supporting reasons to believe.
 
 ## Setup
 
@@ -45,7 +46,13 @@ Follow this workflow:
    - usage or purchase context
    - price tier or product type
    - existing target audience hypothesis
-4. Run the campaign helper script when a campaign draft artifact is useful:
+4. If the workflow is `product-concept`, gather or infer:
+   - product category or product direction
+   - brand or product name, if available
+   - target audience or concept-relevant consumer need
+   - product selling points, technology, ingredient, craft, or experience
+   - available proof points or reasons to believe
+5. Run the campaign helper script when a campaign draft artifact is useful:
 
 ```bash
 python3 "$PLUGIN_DIR/skills/campaign-brief/scripts/build_campaign_brief.py" \
@@ -56,7 +63,7 @@ python3 "$PLUGIN_DIR/skills/campaign-brief/scripts/build_campaign_brief.py" \
   --channel "Primary channel"
 ```
 
-5. Return the requested marketing artifact in a concise, directly usable format.
+6. Return the requested marketing artifact in a concise, directly usable format.
 
 ## Rules
 
