@@ -5,14 +5,14 @@
     "name": "saibodafu"
   },
   "metadata": {
-    "description": "A skills marketplace for practical marketing workflows.",
+    "description": "面向实战营销工作流的 skills market。A skills marketplace for practical marketing workflows.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "marketing-skills",
       "source": "./",
-      "description": "Marketing skills for campaign briefs, content planning, and go-to-market workflows.",
+      "description": "营销技能包：用于活动简报、内容规划和上市推广工作流。Marketing skills for campaign briefs, content planning, and go-to-market workflows.",
       "version": "0.1.0",
       "author": {
         "name": "saibodafu"

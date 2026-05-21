@@ -1,12 +1,12 @@
 {
   "name": "marketing-skills",
   "version": "0.1.0",
-  "description": "A marketplace-ready collection of marketing skills for campaign briefs, content planning, and go-to-market workflows.",
+  "description": "营销技能市场包：用于活动简报、内容规划和上市推广工作流。Marketing skills market package for campaign briefs, content planning, and go-to-market workflows.",
   "author": {
     "name": "saibodafu"
   },
   "interface": {
     "displayName": "Marketing Skills",
-    "description": "Reusable marketing workflow skills for Codex."
+    "description": "可复用的 Codex 营销工作流技能。Reusable marketing workflow skills for Codex."
   }
 }
