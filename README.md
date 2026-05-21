@@ -1,8 +1,8 @@
 # Marketing Skills 营销技能市场
 
-这是一个面向 skills market 的营销技能包骨架，用来沉淀可复用的营销工作流能力，例如活动简报、内容规划、上市推广、渠道执行和销售物料准备。
+这是一个面向 skills market 的营销技能包骨架，用来沉淀可复用的营销工作流能力，例如消费者洞察、活动简报、内容规划、上市推广、渠道执行和销售物料准备。
 
-English summary: A marketplace-ready marketing skills package for reusable campaign, content, and go-to-market workflows.
+English summary: A marketplace-ready marketing skills package for reusable consumer insight, campaign, content, and go-to-market workflows.
 
 ## 产品说明 / Product Description
 
@@ -24,17 +24,23 @@ English: `marketing-skills` is a collection of reusable marketing workflow skill
 ├── commands/
 │   └── marketing.md
 └── skills/
-    └── campaign-brief/
-        ├── SKILL.md
-        └── scripts/
-            └── build_campaign_brief.py
+    ├── campaign-brief/
+    │   ├── SKILL.md
+    │   └── scripts/
+    │       └── build_campaign_brief.py
+    └── consumer-insight/
+        └── SKILL.md
 ```
 
-## Demo Skill：campaign-brief
+## Skills
 
 `campaign-brief` 用来把粗略的营销输入整理成一份可执行的活动简报，适合用于新品推广、渠道活动、内容选题、销售物料前置规划等场景。
 
 English: `campaign-brief` turns rough campaign context into a concise, execution-ready marketing brief.
+
+`consumer-insight` 用来围绕中国市场具体品类梳理潜在消费者画像，筛选品牌优先进入的核心人群，并进一步拆解痛点、痒点、爽点和产品机会。
+
+English: `consumer-insight` maps consumer segments, priority target users, emotional drivers, and product opportunities for China-market categories.
 
 ### 示例
 
@@ -62,5 +68,5 @@ English: Add a new skill by creating `skills/<skill-name>/SKILL.md`, placing reu
 
 - `.claude-plugin` 保持和参考项目一致，用于 marketplace 风格的插件描述。
 - `.codex-plugin` 用于 Codex 插件清单兼容。
-- demo skill 先保持小而可执行，方便后续扩展。
+- skills 先保持小而可执行，方便后续扩展。
 - 产品描述默认采用中文为主、英文为辅的双语表达。

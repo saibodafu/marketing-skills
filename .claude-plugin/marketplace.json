@@ -12,13 +12,15 @@
     {
       "name": "marketing-skills",
       "source": "./",
-      "description": "营销技能包：用于活动简报、内容规划和上市推广工作流。Marketing skills for campaign briefs, content planning, and go-to-market workflows.",
+      "description": "营销技能包：用于消费者洞察、活动简报、内容规划和上市推广工作流。Marketing skills for consumer insight, campaign briefs, content planning, and go-to-market workflows.",
       "version": "0.1.0",
       "author": {
         "name": "saibodafu"
       },
       "keywords": [
         "marketing",
+        "consumer insight",
+        "persona",
         "campaign",
         "brief",
         "content",
