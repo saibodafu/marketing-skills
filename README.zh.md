@@ -85,6 +85,12 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 使用 seasonal-poster-generator，基于“立夏，宠物猫粮”直接生成节气海报文案、生图提示词和成品海报。
 ```
 
+或者：
+
+```text
+使用 qianchuan-viral-video-script-generator，为这个产品生成 10 条千川爆款视频脚本。
+```
+
 ### 其他 Agent 工具
 
 只要工具支持读取 GitHub 仓库或本地目录，就可以按这个顺序接入：
@@ -107,6 +113,7 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 /marketing product-copywriting 把产品功能和卖点转成短买点文案
 /marketing jiangxiaobai-style-copywriting 为产品生成江小白级情绪短文案
 /marketing seasonal-poster-generator 基于节气和产品生成品牌海报创意、生图提示词和成品海报
+/marketing qianchuan-viral-video-script-generator 为产品生成 10 条 15-30 秒千川爆款视频脚本
 ```
 
 以下自然语言也适合触发：
@@ -126,6 +133,9 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 - “立夏，宠物猫粮，直接生成节气海报”
 - “给这个产品做二十四节气借势海报”
 - “输出节气海报文案和 AI 生图提示词”
+- “帮我写 10 条千川爆款视频脚本”
+- “形式：口播，主题：这个产品”
+- “这个产品怎么拍抖音投放素材”
 
 ### 脚本方式
 
@@ -222,6 +232,18 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
 - AI 生图提示词
 - 成品海报生成执行
 
+### qianchuan-viral-video-script-generator
+
+为产品、服务或主题生成 10 条 15-30 秒千川 / 抖音转化型爆款视频脚本，适合全品类投放素材、短视频带货和多素材方向测试。
+
+输出重点：
+
+- 信息确认与假设
+- 爆款五步结构脚本
+- 三秒抓注意、痛点刺痛、唯一解法、具象价值呈现和行动机制
+- 口播、剧情、密语、科普、生活流等风格适配
+- 全行业通用黄金句式库调用
+
 ---
 
 ## GitHub 仓库
@@ -257,6 +279,8 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
         ├── SKILL.md
         └── knowledge/
             └── jiangxiaobai-style-patterns.md
+    ├── qianchuan-viral-video-script-generator/
+    │   └── SKILL.md
     └── seasonal-poster-generator/
         └── SKILL.md
 ```
