@@ -76,6 +76,12 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 或者：
 
 ```text
+使用 brand-story，基于这个品牌背景和产品卖点写一篇 300 字品牌故事。
+```
+
+或者：
+
+```text
 使用 jiangxiaobai-style-copywriting，为这个产品写 10 句江小白级情绪短文案。
 ```
 
@@ -111,6 +117,7 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 /marketing consumer-insight 分析中国市场某个品类的核心人群和产品机会
 /marketing product-concept 为一个新品方向生成产品概念板
 /marketing product-copywriting 把产品功能和卖点转成短买点文案
+/marketing brand-story 基于品牌事实和产品卖点写一篇 300 字品牌故事
 /marketing jiangxiaobai-style-copywriting 为产品生成江小白级情绪短文案
 /marketing seasonal-poster-generator 基于节气和产品生成品牌海报创意、生图提示词和成品海报
 /marketing qianchuan-viral-video-script-generator 为产品生成 10 条 15-30 秒千川爆款视频脚本
@@ -127,6 +134,9 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 - “帮我写 10 句产品买点文案”
 - “把这个功能转成用户愿意买单的短文案”
 - “给这个卖点起几个更有感知的名字”
+- “帮我写一篇品牌故事”
+- “基于创始人初心和产品卖点写品牌故事”
+- “写一个 300 字官网品牌故事”
 - “写 10 句江小白级文案”
 - “把这个产品写得更走心、更有情绪”
 - “给这个新品写适合海报和社媒的情绪短句”
@@ -208,6 +218,18 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
 - 卖点到买点转译
 - 10句「功能价值 + 买点」短文案
 
+### brand-story
+
+基于可核实的品牌事实、产品卖点和差异化定位，创作一篇约 300 字、简单可信且有戏剧记忆点的中文品牌故事。
+
+输出重点：
+
+- 事实边界检查
+- 产品卖点到用户利益的内部转译
+- 文化溯源、创始人初心、产品研发或用户案例主线选择
+- 一篇约 300 字品牌故事
+- 必要时提示待核实信息
+
 ### jiangxiaobai-style-copywriting
 
 把产品信息、核心卖点和使用场景转化为“江小白级”的极简情绪短文案，适合产品海报、社交媒体、包装短句和品牌内容。
@@ -274,6 +296,8 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
     ├── product-concept/
     │   └── SKILL.md
     ├── product-copywriting/
+    │   └── SKILL.md
+    ├── brand-story/
     │   └── SKILL.md
     ├── jiangxiaobai-style-copywriting/
         ├── SKILL.md

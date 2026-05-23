@@ -1,0 +1,4 @@
+interface:
+  display_name: "品牌故事创造家"
+  short_description: "创作可信有记忆点的中文品牌故事与产品卖点叙事工作流"
+  default_prompt: "Use $brand-story to write a concise Chinese brand story from verified brand facts and product selling points."
