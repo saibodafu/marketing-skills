@@ -67,6 +67,12 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 使用 product-concept，基于新品方向生成 Product Concept Board、核心价值承诺和信任状。
 ```
 
+还可以使用：
+
+```text
+使用 product-copywriting，把这个产品卖点转成 10 句短买点文案。
+```
+
 ### 其他 Agent 工具
 
 只要工具支持读取 GitHub 仓库或本地目录，就可以按这个顺序接入：
@@ -86,6 +92,7 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 /marketing campaign-brief 为一个新品上市活动生成活动简报
 /marketing consumer-insight 分析中国市场某个品类的核心人群和产品机会
 /marketing product-concept 为一个新品方向生成产品概念板
+/marketing product-copywriting 把产品功能和卖点转成短买点文案
 ```
 
 以下自然语言也适合触发：
@@ -96,6 +103,9 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 - “拆解用户痛点、痒点、爽点和产品机会”
 - “帮我做一个新品 Product Concept”
 - “把这个产品方向整理成概念测试文案”
+- “帮我写 10 句产品买点文案”
+- “把这个功能转成用户愿意买单的短文案”
+- “给这个卖点起几个更有感知的名字”
 
 ### 脚本方式
 
@@ -158,6 +168,16 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
 - 信任状筛选
 - 完整 Product Concept Board
 
+### product-copywriting
+
+把产品功能、卖点、成分、技术、设计或使用体验转化为短句式、高感知、可直接用于电商详情页、广告图和种草内容的买点文案。
+
+输出重点：
+
+- 产品信息理解
+- 卖点到买点转译
+- 10句「功能价值 + 买点」短文案
+
 ---
 
 ## GitHub 仓库
@@ -185,7 +205,9 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
     │       └── build_campaign_brief.py
     ├── consumer-insight/
     │   └── SKILL.md
-    └── product-concept/
+    ├── product-concept/
+    │   └── SKILL.md
+    └── product-copywriting/
         └── SKILL.md
 ```
 
