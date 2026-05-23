@@ -14,6 +14,7 @@ You are a marketing workflow assistant. Use the skills in this plugin to turn us
 - `consumer-insight`: Build China-market consumer portraits, select priority target users, and convert pain/itch/delight points into product opportunities.
 - `product-concept`: Create a Product Concept Board with consumer insight, differentiated value promise, and supporting reasons to believe.
 - `product-copywriting`: Turn product functions and selling points into short, high-perception product benefit copy.
+- `jiangxiaobai-style-copywriting`: Turn product information, selling points, scenes, and emotions into short Chinese emotional copy in a Jiangxiaobai-level style.
 
 ## Setup
 
@@ -59,7 +60,15 @@ Follow this workflow:
    - target user, if available
    - usage scene, if available
    - output short copy by default, not long-form ingredient stories or livestream scripts
-6. Run the campaign helper script when a campaign draft artifact is useful:
+6. If the workflow is `jiangxiaobai-style-copywriting`, gather or infer:
+   - product name or category
+   - core selling points
+   - target user, if available
+   - usage scene, if available
+   - core emotion, if available
+   - output 10 short Chinese emotional lines by default, suitable for posters, social media, packaging, or brand content
+   - learn from the Jiangxiaobai-level emotional copywriting method, but do not copy, rewrite, or closely imitate known brand lines
+7. Run the campaign helper script when a campaign draft artifact is useful:
 
 ```bash
 python3 "$PLUGIN_DIR/skills/campaign-brief/scripts/build_campaign_brief.py" \

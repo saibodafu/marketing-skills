@@ -73,6 +73,12 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 使用 product-copywriting，把这个产品卖点转成 10 句短买点文案。
 ```
 
+或者：
+
+```text
+使用 jiangxiaobai-style-copywriting，为这个产品写 10 句江小白级情绪短文案。
+```
+
 ### 其他 Agent 工具
 
 只要工具支持读取 GitHub 仓库或本地目录，就可以按这个顺序接入：
@@ -93,6 +99,7 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 /marketing consumer-insight 分析中国市场某个品类的核心人群和产品机会
 /marketing product-concept 为一个新品方向生成产品概念板
 /marketing product-copywriting 把产品功能和卖点转成短买点文案
+/marketing jiangxiaobai-style-copywriting 为产品生成江小白级情绪短文案
 ```
 
 以下自然语言也适合触发：
@@ -106,6 +113,9 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 - “帮我写 10 句产品买点文案”
 - “把这个功能转成用户愿意买单的短文案”
 - “给这个卖点起几个更有感知的名字”
+- “写 10 句江小白级文案”
+- “把这个产品写得更走心、更有情绪”
+- “给这个新品写适合海报和社媒的情绪短句”
 
 ### 脚本方式
 
@@ -178,6 +188,18 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
 - 卖点到买点转译
 - 10句「功能价值 + 买点」短文案
 
+### jiangxiaobai-style-copywriting
+
+把产品信息、核心卖点和使用场景转化为“江小白级”的极简情绪短文案，适合产品海报、社交媒体、包装短句和品牌内容。
+
+输出重点：
+
+- 产品信息理解
+- 情绪-场景定位
+- 表达方向
+- 10句江小白级情绪短文案
+- 海报、社媒、包装推荐用句
+
 ---
 
 ## GitHub 仓库
@@ -207,8 +229,12 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
     │   └── SKILL.md
     ├── product-concept/
     │   └── SKILL.md
-    └── product-copywriting/
-        └── SKILL.md
+    ├── product-copywriting/
+    │   └── SKILL.md
+    └── jiangxiaobai-style-copywriting/
+        ├── SKILL.md
+        └── knowledge/
+            └── jiangxiaobai-style-patterns.md
 ```
 
 ---
