@@ -1,6 +1,6 @@
 # marketing-skills — Claude Code / Codex 营销技能包
 
-> 把消费者洞察、活动简报、内容规划、上市推广等营销工作流沉淀成可复用的 Agent skills。
+> 把消费者洞察、活动简报、内容规划、上市推广、节气营销海报等工作流沉淀成可复用的 Agent skills。
 
 ### 中文说明
 
@@ -79,6 +79,12 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 使用 jiangxiaobai-style-copywriting，为这个产品写 10 句江小白级情绪短文案。
 ```
 
+也可以使用：
+
+```text
+使用 seasonal-poster-generator，基于“立夏，宠物猫粮”直接生成节气海报文案、生图提示词和成品海报。
+```
+
 ### 其他 Agent 工具
 
 只要工具支持读取 GitHub 仓库或本地目录，就可以按这个顺序接入：
@@ -100,6 +106,7 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 /marketing product-concept 为一个新品方向生成产品概念板
 /marketing product-copywriting 把产品功能和卖点转成短买点文案
 /marketing jiangxiaobai-style-copywriting 为产品生成江小白级情绪短文案
+/marketing seasonal-poster-generator 基于节气和产品生成品牌海报创意、生图提示词和成品海报
 ```
 
 以下自然语言也适合触发：
@@ -116,6 +123,9 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 - “写 10 句江小白级文案”
 - “把这个产品写得更走心、更有情绪”
 - “给这个新品写适合海报和社媒的情绪短句”
+- “立夏，宠物猫粮，直接生成节气海报”
+- “给这个产品做二十四节气借势海报”
+- “输出节气海报文案和 AI 生图提示词”
 
 ### 脚本方式
 
@@ -200,6 +210,18 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
 - 10句江小白级情绪短文案
 - 海报、社媒、包装推荐用句
 
+### seasonal-poster-generator
+
+把节气、产品和品牌调性转化为二十四节气品牌海报方案，适合小红书、朋友圈、公众号头图、电商活动图和品牌节气借势内容。
+
+输出重点：
+
+- 节气 × 产品洞察
+- 海报主文案和备选文案
+- 视觉创意
+- AI 生图提示词
+- 成品海报生成执行
+
 ---
 
 ## GitHub 仓库
@@ -231,10 +253,12 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
     │   └── SKILL.md
     ├── product-copywriting/
     │   └── SKILL.md
-    └── jiangxiaobai-style-copywriting/
+    ├── jiangxiaobai-style-copywriting/
         ├── SKILL.md
         └── knowledge/
             └── jiangxiaobai-style-patterns.md
+    └── seasonal-poster-generator/
+        └── SKILL.md
 ```
 
 ---

@@ -12,7 +12,7 @@
     {
       "name": "marketing-skills",
       "source": "./",
-      "description": "营销技能包：用于消费者洞察、产品概念、产品买点文案、江小白级情绪短文案、活动简报、内容规划和上市推广工作流。Marketing skills for consumer insight, product concepts, product benefit copywriting, Jiangxiaobai-style emotional copywriting, campaign briefs, content planning, and go-to-market workflows.",
+      "description": "营销技能包：用于消费者洞察、产品概念、产品买点文案、江小白级情绪短文案、节气营销海报、活动简报、内容规划和上市推广工作流。Marketing skills for consumer insight, product concepts, product benefit copywriting, Jiangxiaobai-style emotional copywriting, seasonal posters, campaign briefs, content planning, and go-to-market workflows.",
       "version": "0.1.0",
       "author": {
         "name": "saibodafu"
@@ -24,6 +24,9 @@
         "product copywriting",
         "Jiangxiaobai-style copywriting",
         "emotional copywriting",
+        "seasonal poster",
+        "solar terms",
+        "AI image prompt",
         "benefit copy",
         "concept board",
         "persona",
