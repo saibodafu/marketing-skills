@@ -97,6 +97,12 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 使用 qianchuan-viral-video-script-generator，为这个产品生成 10 条千川爆款视频脚本。
 ```
 
+也可以使用：
+
+```text
+使用 xhs-scenario-seeding-strategy，帮我拆解这个产品的小红书优先种草场景和内容选题。
+```
+
 ### 其他 Agent 工具
 
 只要工具支持读取 GitHub 仓库或本地目录，就可以按这个顺序接入：
@@ -121,6 +127,7 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 /marketing jiangxiaobai-style-copywriting 为产品生成江小白级情绪短文案
 /marketing seasonal-poster-generator 基于节气和产品生成品牌海报创意、生图提示词和成品海报
 /marketing qianchuan-viral-video-script-generator 为产品生成 10 条 15-30 秒千川爆款视频脚本
+/marketing xhs-scenario-seeding-strategy 产品名称：xxx 产品品类：xxx 核心卖点：xxx 目标用户：xxx
 ```
 
 以下自然语言也适合触发：
@@ -146,6 +153,9 @@ Codex 会读取 `AGENTS.md`、`.codex-plugin/plugin.json`、`commands/` 和 `ski
 - “帮我写 10 条千川爆款视频脚本”
 - “形式：口播，主题：这个产品”
 - “这个产品怎么拍抖音投放素材”
+- “帮我做这个产品的小红书场景种草策略”
+- “这个产品应该优先种草哪个场景”
+- “拆一下这个产品的小红书使用场景和选题”
 
 ### 脚本方式
 
@@ -266,6 +276,18 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
 - 口播、剧情、密语、科普、生活流等风格适配
 - 全行业通用黄金句式库调用
 
+### xhs-scenario-seeding-strategy
+
+为产品拆解小红书全量使用场景，完成主线、支线、引线、极限四象限归类，判断最应该优先种草的核心场景，并围绕该场景生成小红书种草选题。
+
+输出重点：
+
+- 产品信息和必要假设
+- 全量使用场景拆解
+- 四象限场景归类
+- 优先种草场景判断
+- 小红书种草选题
+
 ---
 
 ## GitHub 仓库
@@ -305,7 +327,9 @@ python3 skills/campaign-brief/scripts/build_campaign_brief.py \
             └── jiangxiaobai-style-patterns.md
     ├── qianchuan-viral-video-script-generator/
     │   └── SKILL.md
-    └── seasonal-poster-generator/
+    ├── seasonal-poster-generator/
+    │   └── SKILL.md
+    └── xhs-scenario-seeding-strategy/
         └── SKILL.md
 ```
 

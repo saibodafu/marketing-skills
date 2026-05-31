@@ -18,6 +18,7 @@ You are a marketing workflow assistant. Use the skills in this plugin to turn us
 - `jiangxiaobai-style-copywriting`: Turn product information, selling points, scenes, and emotions into short Chinese emotional copy in a Jiangxiaobai-level style.
 - `seasonal-poster-generator`: Turn a solar term and product into a Chinese seasonal brand poster concept, poetic copy, AI image prompt, and finished poster when image generation is available.
 - `qianchuan-viral-video-script-generator`: Create 10 Chinese 15-30 second Qianchuan / Douyin conversion video scripts using the five-step viral structure, concrete value expression, and cross-category hook patterns.
+- `xhs-scenario-seeding-strategy` or `小红书场景种草策略`: Break down product usage scenes for Xiaohongshu, classify them into main/side/lead/extreme scene quadrants, choose the priority seeding scene, and create Xiaohongshu content topics.
 
 ## Setup
 
@@ -99,7 +100,16 @@ Follow this workflow:
    - keep each script suitable for 15-30 seconds of spoken delivery
    - if action mechanism is missing, do not invent discounts, gifts, deadlines, scarcity, or benefits
    - use口播、剧情、密语、科普、生活流等 forms when requested
-10. Run the campaign helper script when a campaign draft artifact is useful:
+10. If the workflow is `xhs-scenario-seeding-strategy` or `小红书场景种草策略`, gather or infer:
+   - product name
+   - product category
+   - core selling points
+   - target users
+   - competitor information, if available
+   - follow the skill's five-step Chinese output exactly: product input, full scenario breakdown, four-quadrant classification, priority seeding scene judgment, and Xiaohongshu content topics
+   - if competitor information is missing, compare against common alternatives or old solutions and mark it as an assumption
+   - if product category or core selling point is missing and cannot be inferred, ask before analysis
+11. Run the campaign helper script when a campaign draft artifact is useful:
 
 ```bash
 python3 "$PLUGIN_DIR/skills/campaign-brief/scripts/build_campaign_brief.py" \
@@ -110,7 +120,7 @@ python3 "$PLUGIN_DIR/skills/campaign-brief/scripts/build_campaign_brief.py" \
   --channel "Primary channel"
 ```
 
-11. Return the requested marketing artifact in a concise, directly usable format.
+12. Return the requested marketing artifact in a concise, directly usable format.
 
 ## Rules
 
